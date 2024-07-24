@@ -1,6 +1,7 @@
 package conta;
 
 import java.util.Scanner;
+import conta.util.Cores;
 
 public class Menu {
 
@@ -11,11 +12,11 @@ public class Menu {
 
 		while (true) {
 
-			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_WHITE_BOLD + "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 			System.out.println("                                                     ");
 			System.out.println("                      BANCO  DINAMIS                 ");
 			System.out.println("                                                     ");
-			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 			System.out.println("                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar todas as Contas               ");
@@ -27,14 +28,14 @@ public class Menu {
 			System.out.println("            8 - Transferir valores entre Contas      ");
 			System.out.println("            9 - Sair                                 ");
 			System.out.println("                                                     ");
-			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 			System.out.println("Entre com a opção desejada:                          ");
 			System.out.println("                                                     ");
 
 			opcao = sc.nextInt();
 
 			if (opcao == 9) {
-				System.out.println("\nBanco Dinamis - O seu Futuro começa aqui!");
+				System.out.println(Cores.TEXT_WHITE_BRIGHT + "\nBanco Dinamis - O seu Futuro começa aqui!");
 				sobre();
                  sc.close();
 				System.exit(0);
@@ -46,35 +47,35 @@ public class Menu {
 
 					break;
 				case 2:
-					System.out.println("Listar todas as Contas\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Listar todas as Contas\n\n");
 
 					break;
 				case 3:
-					System.out.println("Consultar dados da Conta - por número\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Consultar dados da Conta - por número\n\n");
 
 					break;
 				case 4:
-					System.out.println("Atualizar dados da Conta\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Atualizar dados da Conta\n\n");
 
 					break;
 				case 5:
-					System.out.println("Apagar a Conta\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Apagar a Conta\n\n");
 
 					break;
 				case 6:
-					System.out.println("Saque\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Saque\n\n");
 
 					break;
 				case 7:
-					System.out.println("Depósito\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Depósito\n\n");
 
 					break;
 				case 8:
-					System.out.println("Transferência entre Contas\n\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT + "Transferência entre Contas\n\n");
 
 					break;
 				default:
-					System.out.println("\nOpção Inválida!\n");
+					System.out.println(Cores.TEXT_WHITE_BRIGHT +"\nOpção Inválida!\n");
 					break;
 			}
 		}
